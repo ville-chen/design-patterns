@@ -1,6 +1,7 @@
 package observer.observer;
 
-import observer.api.DisplayElement;
+import observer.thirdparty.DisplayElement;
+import observer.subject.Subject;
 
 /**
  * Created by admin on 2018/1/24.
@@ -9,7 +10,12 @@ import observer.api.DisplayElement;
 public class ThirdPartyDisplay implements Observer, DisplayElement {
 
     @Override
-    public void update() {
+    public void subscribe(Subject subject) {
+
+    }
+
+    @Override
+    public void update(Subject subject, Object arg) {
 
     }
 

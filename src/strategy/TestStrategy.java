@@ -7,6 +7,7 @@ import strategy.client.ModelDuck;
 
 /**
  * Created by admin on 2018/1/24.
+ * 策略模式 测试类
  */
 public class TestStrategy {
     public static void main(String[] args) {
