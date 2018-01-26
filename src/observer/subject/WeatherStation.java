@@ -8,7 +8,7 @@ import observer.dto.WeatherDto;
  */
 public class WeatherStation extends DefaultSubject {
 
-    public WeatherDto weatherDto;
+    private WeatherDto weatherDto;
 
     public WeatherDto getWeatherDto() {
         return weatherDto;
@@ -27,7 +27,6 @@ public class WeatherStation extends DefaultSubject {
         super.notifyObservers();
         //推
         //super.notifyObservers(weatherDto);
-        super.clearChanged();
     }
 
     /**
