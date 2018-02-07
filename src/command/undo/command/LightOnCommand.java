@@ -1,6 +1,6 @@
-package command.queue.command;
+package command.undo.command;
 
-import command.queue.receiver.LEDLight;
+import command.undo.receiver.LEDLight;
 
 /**
  * Created by ville on 2018/2/6.
@@ -14,8 +14,12 @@ public class LightOnCommand implements Command {
         this.light = light;
     }
 
-    @Override
     public void execute() {
         light.on();
+    }
+
+    @Override
+    public void undo() {
+        light.off();
     }
 }

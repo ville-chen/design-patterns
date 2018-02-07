@@ -1,4 +1,4 @@
-package command.queue.receiver;
+package command.undo.receiver;
 
 /**
  * Created by ville on 2018/2/6.

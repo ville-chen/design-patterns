@@ -3,10 +3,9 @@ package command.queue.command;
 import command.queue.receiver.LEDLight;
 
 /**
- * Created by ville on 2018/2/6.
- * 开灯命令类
+ * Created by admin on 2018/2/7.
  */
-public class LightOnCommand implements Command {
+public class LightOffCommand implements Command {
 
     private LEDLight light;
 
@@ -16,6 +15,6 @@ public class LightOnCommand implements Command {
 
     @Override
     public void execute() {
-        light.on();
+        light.off();
     }
 }

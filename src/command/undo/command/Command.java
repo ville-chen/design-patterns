@@ -1,0 +1,13 @@
+package command.undo.command;
+
+/**
+ * Created by ville on 2018/2/6.
+ * 命令接口
+ */
+public interface Command {
+
+    void execute();
+
+    void undo();
+
+}
