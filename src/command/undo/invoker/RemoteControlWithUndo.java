@@ -48,6 +48,7 @@ public class RemoteControlWithUndo {
                     .append(onCommands[i].getClass().getName()).append(" & ")
                     .append(offCommands[i].getClass().getName()).append("\n");
         }
+        builder.append("[slot undo]").append(undoCommand.getClass().getName()).append("\n");
         return builder.toString();
     }
 
