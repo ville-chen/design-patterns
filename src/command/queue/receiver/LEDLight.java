@@ -1,11 +1,10 @@
-package command.receiver;
+package command.queue.receiver;
 
 /**
  * Created by ville on 2018/2/6.
  */
-public class LedReceiver implements Receiver {
+public class LEDLight {
 
-    @Override
     public void on() {
         System.out.println("LED light on !");
     }

@@ -1,16 +1,16 @@
-package command.command;
+package command.basic.command;
 
-import command.receiver.Receiver;
+import command.basic.receiver.LEDLight;
 
 /**
  * Created by ville on 2018/2/6.
- * 命令对象
+ * 开灯命令类
  */
 public class LightOnCommand implements Command {
 
-    private Receiver light;
+    private LEDLight light;
 
-    public void setLight(Receiver light) {
+    public void setLight(LEDLight light) {
         this.light = light;
     }
 
