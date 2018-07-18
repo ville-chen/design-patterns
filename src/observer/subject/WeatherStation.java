@@ -10,6 +10,7 @@ public class WeatherStation extends DefaultSubject {
 
     private WeatherDto weatherDto;
 
+    @Override
     public WeatherDto getWeatherDto() {
         return weatherDto;
     }
@@ -32,6 +33,7 @@ public class WeatherStation extends DefaultSubject {
     /**
      * 更新测量数据
      */
+    @Override
     public void setMeasurements(float temperature, float humidity, float pressure) {
         weatherDto.setTemperature(temperature);
         weatherDto.setHumidity(humidity);

@@ -38,6 +38,7 @@ public abstract class Pizza {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
+    @Override
     public String toString() {
         StringBuilder display = new StringBuilder();
         display.append("---- " + name + " ----\n");

@@ -16,7 +16,7 @@ public class DefaultSubject implements Subject {
     private boolean changed;
     private List<Observer> observerList;
 
-    public WeatherDto weatherDto;
+    private WeatherDto weatherDto;
 
     public WeatherDto getWeatherDto() {
         return weatherDto;
@@ -51,8 +51,9 @@ public class DefaultSubject implements Subject {
     public void notifyObservers(Object obj) {
 
         synchronized (this) {
-            if (!hasChanged())
+            if (!hasChanged()) {
                 return;
+            }
             clearChanged();
         }
         for (Observer observer : observerList) {
