@@ -1,23 +1,10 @@
 package observer.subject;
 
-import observer.dto.WeatherDto;
-
 /**
  * Created by admin on 2018/1/25.
  * 继承DefaultSubject的气象站
  */
 public class WeatherStation extends DefaultSubject {
-
-    private WeatherDto weatherDto;
-
-    @Override
-    public WeatherDto getWeatherDto() {
-        return weatherDto;
-    }
-
-    public WeatherStation() {
-        weatherDto = new WeatherDto();
-    }
 
     /**
      * 数据更新，通知观察者
@@ -28,19 +15,5 @@ public class WeatherStation extends DefaultSubject {
         super.notifyObservers();
         //推
         //super.notifyObservers(weatherDto);
-    }
-
-    /**
-     * 更新测量数据
-     */
-    @Override
-    public void setMeasurements(float temperature, float humidity, float pressure) {
-        weatherDto.setTemperature(temperature);
-        weatherDto.setHumidity(humidity);
-        weatherDto.setPressure(pressure);
-
-        //if 数据变化较大需要更新
-        super.setChanged();
-        measurementsChanged();
     }
 }

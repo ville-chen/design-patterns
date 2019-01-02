@@ -13,7 +13,9 @@ import java.util.List;
  * 观察者类型：当前观测值，推送获取数据
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
-
+    /**
+     * 当前监听的主题列表
+     */
     private List<Subject> subjectList;
 
     private WeatherDto weatherDto;
